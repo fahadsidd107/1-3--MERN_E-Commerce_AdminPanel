@@ -1,9 +1,9 @@
-import React,{useState} from 'react'
+import React, { useState } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { Edit, DeleteOutline } from "@material-ui/icons";
 import { productRows } from "../../Data";
 import { Link } from "react-router-dom";
-import './ProductList.css'
+import "./ProductList.css";
 function ProductList() {
   const [data, setData] = useState(productRows);
 
@@ -54,10 +54,10 @@ function ProductList() {
             </Link>
             <DeleteOutline
               className="productListDelete"
-              onClick={() =>{
-              handleDelete(params.row.id)
-              alert(`Item with ID: ${params.row.id} has been deleted.`)}
-              }
+              onClick={() => {
+                handleDelete(params.row.id);
+                alert(`Item with ID: ${params.row.id} has been deleted.`);
+              }}
             />
           </div>
         );
@@ -65,23 +65,18 @@ function ProductList() {
     },
   ];
 
-
-
-
-
-
   return (
-    <div className='productList'>
-            <DataGrid
-          rows={data}
-          disableSelectionOnClick
-          columns={columns}
-          pageSize={8}
-          rowsPerPageOptions={[8]}
-          checkboxSelection
-        />
+    <div className="productList">
+      <DataGrid
+        rows={data}
+        disableSelectionOnClick
+        columns={columns}
+        pageSize={8}
+        rowsPerPageOptions={[8]}
+        checkboxSelection
+      />
     </div>
-  )
+  );
 }
 
-export default ProductList
+export default ProductList;
