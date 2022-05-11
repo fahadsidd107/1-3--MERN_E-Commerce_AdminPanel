@@ -56,9 +56,9 @@ function UserList() {
             <DeleteOutline
               className="userListDelete"
               onClick={() => {
-              handleDelete(params.row.id)
-              alert(`User with ID: ${params.row.id} has been deleted.`)}
-              }
+                handleDelete(params.row.id);
+                alert(`User with ID: ${params.row.id} has been deleted.`);
+              }}
             />
           </div>
         );
