@@ -4,6 +4,8 @@ import { useState } from "react";
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+
+    const handleClick=()=>{}
   return (
     <div
     style={{
@@ -16,7 +18,7 @@ function Login() {
   >
         <input type='email' placeholder='email' onChange={(e) => setEmail(e.target.value)} />
         <input type='password' placeholder='password' onChange={(e) => setPassword(e.target.value)}/>
-        <button>Login</button>
+        <button onClick={handleClick}>Login</button>
     </div>
   )
 }
