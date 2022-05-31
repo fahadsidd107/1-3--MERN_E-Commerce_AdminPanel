@@ -14,7 +14,7 @@ function Login() {
       justifyContent: "center",
     }}
   >
-        <input type='email' placeholder='email'/>
+        <input type='email' placeholder='email' onChange={(e) => setEmail(e.target.value)} />
         <input type='password' placeholder='password'/>
         <button>Login</button>
     </div>
