@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import useDispatch from "react-redux";
-import {login} from '../../redux/apiCalls'
+import { useDispatch, useSelector } from "react-redux";
+import {login} from '../../redux/apiCalls';
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -10,7 +10,7 @@ function Login() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    login(dispatch, {email, password});
+    login(dispatch, { email, password });
   };
   return (
     <div
