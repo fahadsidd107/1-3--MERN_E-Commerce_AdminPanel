@@ -1,9 +1,11 @@
 import React from "react";
 import { useState } from "react";
+import useDispatch from "./redux/useDispatch";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
 
   const handleClick = (e) => {
     e.preventDefault();
