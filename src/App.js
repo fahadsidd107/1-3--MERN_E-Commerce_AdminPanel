@@ -17,6 +17,7 @@ import NewUser from "./pages/newUser/NewUser";
 import ProductList from "./pages/productList/ProductList";
 import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
+import Login from "./pages/login/Login";
 function App() {
   return (
     <Router className="App">
@@ -25,7 +26,7 @@ function App() {
         <Sidebar />
         <Routes>
           <Route path="/users" element={<UserList />} />
-          <Route path="/login" element={<UserList />} />
+          <Route path="/login" element={<Login />} />
           <Route exact path="/user/:userId" element={<User />} />
           <Route exact path="/newUser" element={<NewUser />} />
           <Route exact path="/products" element={<ProductList />} />
