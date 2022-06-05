@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import useDispatch from "./redux/useDispatch";
+import useDispatch from "react-redux";
 
 function Login() {
   const [email, setEmail] = useState("");
