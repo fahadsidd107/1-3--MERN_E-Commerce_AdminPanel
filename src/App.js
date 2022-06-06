@@ -22,14 +22,13 @@ function App() {
  const admin = true
   return (
     <Router className="App">
-    <Topbar />
     <Routes>
       <Route path="/login" element={<Login />} />
     </Routes>
     {admin && (
       <>
-      <Topbar />
       <div className="container">
+      <Topbar />
         <Sidebar />
         <Routes>
           <Route path="/users" element={<UserList />} />
