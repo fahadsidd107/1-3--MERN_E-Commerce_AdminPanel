@@ -17,6 +17,7 @@ function Login() {
     <div
    style={{
      display: "flex",
+     flexDirection: "column",
      alignItems: "center",
      justifyContent: "center",
      height: "100vh",
@@ -25,11 +26,19 @@ function Login() {
       className="login"
     >
       <input
+      style={{
+        padding: "10px",
+        marginBottom: "20px",
+      }}
         type="email"
         placeholder="email"
         onChange={(e) => setEmail(e.target.value)}
       />
       <input
+      style={{
+        padding: "10px",
+        marginBottom: "20px",
+      }}
         type="password"
         placeholder="password"
         onChange={(e) => setPassword(e.target.value)}
