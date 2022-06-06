@@ -19,23 +19,31 @@ import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
 import Login from "./pages/login/Login";
 function App() {
+ const admin = true
   return (
     <Router className="App">
-        <Routes>
-        <Route path="/login" element={<Login />} />
+    <Topbar />
+    <Routes>
+      <Route path="/login" element={<Login />} />
+    </Routes>
+    {admin && (
+      <>
       <Topbar />
       <div className="container">
         <Sidebar />
+        <Routes>
           <Route path="/users" element={<UserList />} />
-         
           <Route exact path="/user/:userId" element={<User />} />
           <Route exact path="/newUser" element={<NewUser />} />
           <Route exact path="/products" element={<ProductList />} />
           <Route exact path="/productEdit/:userId" element={<Product />} />
           <Route exact path="/newproduct" element={<NewProduct />} />
           <Route exact path="/" element={<Home />} />
-      </div>
         </Routes>
+      </div> 
+      </> 
+    )}
+ 
     </Router>
   );
 }
