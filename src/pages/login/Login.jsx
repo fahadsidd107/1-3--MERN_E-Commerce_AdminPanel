@@ -15,7 +15,10 @@ function Login() {
   };
   return (
     <div
-   style={}
+   style={{
+     display: "flex",
+     alignItems: "center",
+   }}
       className="login"
     >
       <input
