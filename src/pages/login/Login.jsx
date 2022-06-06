@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {login} from '../../redux/apiCalls';
+import { login } from "../../redux/apiCalls";
 
 function Login() {
   const [email, setEmail] = useState("");
