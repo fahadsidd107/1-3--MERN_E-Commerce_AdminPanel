@@ -18,6 +18,9 @@ function Login() {
    style={{
      display: "flex",
      alignItems: "center",
+     justifyContent: "center",
+     height: "100vh",
+
    }}
       className="login"
     >
