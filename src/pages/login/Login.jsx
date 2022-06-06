@@ -1,4 +1,5 @@
 import React from "react";
+import "./Login.css";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../redux/apiCalls";
@@ -13,15 +14,7 @@ function Login() {
     login(dispatch, { email, password });
   };
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
+    <div className="login">
       <input
         type="email"
         placeholder="email"
