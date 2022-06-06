@@ -21,13 +21,11 @@ import Login from "./pages/login/Login";
 function App() {
   const admin=true
   return (
-    <div className="container">
     <Router>
     <Routes>
       <Route path="/login" element={<Login />}/>
-      {admin && (
-        <>
           <Topbar />
+          <div className="container">
             <Sidebar />
             <Route exact path="/" element={<Home />}/>
             <Route path="/users" element={<UserList />}/>
@@ -36,11 +34,10 @@ function App() {
             <Route path="/products" element={<ProductList />}/>
             <Route path="/product/:productId" element={<Product />}/>
             <Route path="/newproduct" element={<NewProduct />}/>
-        </>
-      )}
+            </div>
     </Routes>
   </Router>
-  </div>
+
   );
 }
 
