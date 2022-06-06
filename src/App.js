@@ -19,31 +19,32 @@ import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
 import Login from "./pages/login/Login";
 function App() {
- const admin = true
+  const admin=true
   return (
-    <Router className="App">
+    <Router>
     <Routes>
-      <Route path="/login" element={<Login />} />
+      <Route path="/login">
+        <Login />
+      </Route>
+      {admin && (
+        <>
+          <Topbar />
+          <div className="container">
+            <Sidebar />
+            <Route exact path="/" element={<Home />}/>
+            <Route path="/users" element={<UserList />}/>
+            <Route path="/user/:userId" element={<User />}/>
+            <Route path="/newUser" element={<NewUser />}/>
+            <Route path="/products" element={<ProductList />}/>
+            <Route path="/product/:productId" element={<Product />}/>
+            <Route path="/newproduct">
+              <NewProduct />
+            </Route>
+          </div>
+        </>
+      )}
     </Routes>
-    {admin && (
-      <>
-      <div className="container">
-      <Topbar />
-        <Sidebar />
-        <Routes>
-          <Route path="/users" element={<UserList />} />
-          <Route exact path="/user/:userId" element={<User />} />
-          <Route exact path="/newUser" element={<NewUser />} />
-          <Route exact path="/products" element={<ProductList />} />
-          <Route exact path="/productEdit/:userId" element={<Product />} />
-          <Route exact path="/newproduct" element={<NewProduct />} />
-          <Route exact path="/" element={<Home />} />
-        </Routes>
-      </div> 
-      </> 
-    )}
- 
-    </Router>
+  </Router>
   );
 }
 
