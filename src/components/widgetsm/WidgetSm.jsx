@@ -4,7 +4,9 @@ import { Visibility } from "@material-ui/icons";
 function WidgetSm({ data, uname, utitle }) {
   const [user,setUser] = useState([]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const user= 
+  }, []);
   return (
     <div className="WidgetSm">
       <span className="widgetSmTitle">New Join Memebers</span>
