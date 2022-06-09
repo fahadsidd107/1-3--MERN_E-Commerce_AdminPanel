@@ -22,7 +22,9 @@ function App() {
   const admin=true
   return (
     <Router>
-    {<Topbar/>
+    {
+      <>
+    <Topbar/>
      <div className="container">
       <Sidebar />
       <Routes>
@@ -35,7 +37,9 @@ function App() {
             <Route path="/product/:productId" element={<Product />}/>
             <Route path="/newproduct" element={<NewProduct />}/>
     </Routes>
-      </div>}
+      </div>
+      </>
+      }
  
   </Router>
 
