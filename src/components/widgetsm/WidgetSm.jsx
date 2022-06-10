@@ -7,7 +7,7 @@ function WidgetSm({ data, uname, utitle }) {
 
   useEffect(() => {
     const setUser= async()=> {
-      await userRequest.get('')
+      const res = await userRequest.get('')
     }
   }, []);
   return (
