@@ -8,12 +8,12 @@ function WidgetSm({ data, uname, utitle }) {
   useEffect(() => {
     const getUser= async()=> {
       try{
-        
+        const res = await userRequest.get('users/?new=true')
+        setUser(res.data)
       }catch(){
 
       }
-      const res = await userRequest.get('users/?new=true')
-      setUser(res.data)
+      
     }
   }, []);
   return (
