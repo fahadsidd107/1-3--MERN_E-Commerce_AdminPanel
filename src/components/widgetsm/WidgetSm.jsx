@@ -10,11 +10,12 @@ function WidgetSm({ data, uname, utitle }) {
       try{
         const res = await userRequest.get('users/?new=true')
         setUser(res.data)
-      }catch(){
-
+      }catch(err){
+console
       }
       
     }
+    getUser()
   }, []);
   return (
     <div className="WidgetSm">
