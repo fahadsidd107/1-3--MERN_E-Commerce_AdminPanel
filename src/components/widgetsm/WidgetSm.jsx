@@ -25,26 +25,6 @@ function WidgetSm({ data, uname, utitle }) {
           title="Project Manager"
           image={users.image || "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"}
         />
-        <ListItem
-          name="Shareh Akhter"
-          title="Data Engineer"
-          image="https://avatars.githubusercontent.com/u/61376412?s=400&u=bd4075255e4b63efdd5dc216a0375013fe7e0781&v=4"
-        />
-        <ListItem
-          name="Moiz Bakaseer"
-          title="Sales Officer"
-          image="https://avatars.githubusercontent.com/u/61376412?s=400&u=bd4075255e4b63efdd5dc216a0375013fe7e0781&v=4"
-        />
-        <ListItem
-          name="Khubaib Zuberi"
-          title="Designer"
-          image="https://avatars.githubusercontent.com/u/61376412?s=400&u=bd4075255e4b63efdd5dc216a0375013fe7e0781&v=4"
-        />
-        <ListItem
-          name="Shahzaib Ansari"
-          title="Developer"
-          image="https://avatars.githubusercontent.com/u/61376412?s=400&u=bd4075255e4b63efdd5dc216a0375013fe7e0781&v=4"
-        />
       </ul>
     </div>
   );
