@@ -21,13 +21,13 @@ function WidgetSm({ data, uname, utitle }) {
       <span className="widgetSmTitle">New Join Memebers</span>
       <ul className="WidgetSmList">
       {users.map((user) => (
-        
-      )}
         <ListItem
           name="Fahad Siddiqui"
           title="Project Manager"
           image={users.image || "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"}
         />
+      ))}
+        
       </ul>
     </div>
   );
