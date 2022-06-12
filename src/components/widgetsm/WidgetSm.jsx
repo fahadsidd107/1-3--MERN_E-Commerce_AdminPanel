@@ -20,6 +20,9 @@ function WidgetSm({ data, uname, utitle }) {
     <div className="WidgetSm">
       <span className="widgetSmTitle">New Join Memebers</span>
       <ul className="WidgetSmList">
+      {users.map((user) => (
+        
+      )}
         <ListItem
           name="Fahad Siddiqui"
           title="Project Manager"
