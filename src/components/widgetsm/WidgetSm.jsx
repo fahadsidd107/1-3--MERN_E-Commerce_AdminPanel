@@ -23,7 +23,7 @@ function WidgetSm({ data, uname, utitle }) {
         <ListItem
           name="Fahad Siddiqui"
           title="Project Manager"
-          image={users.image}
+          image={users.image || "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"}
         />
         <ListItem
           name="Shareh Akhter"
