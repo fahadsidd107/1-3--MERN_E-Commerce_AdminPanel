@@ -3,7 +3,7 @@ import "./WidgetSm.css";
 import { Visibility } from "@material-ui/icons";
 import { userRequest } from "../../requestMethods";
 function WidgetSm({ data, uname, utitle }) {
-  const [user, setUser] = useState([]);
+  const [users, setUser] = useState([]);
 
   useEffect(() => {
     const getUser = async () => {
@@ -23,7 +23,7 @@ function WidgetSm({ data, uname, utitle }) {
         <ListItem
           name="Fahad Siddiqui"
           title="Project Manager"
-          image="https://avatars.githubusercontent.com/u/61376412?s=400&u=bd4075255e4b63efdd5dc216a0375013fe7e0781&v=4"
+          image={user}
         />
         <ListItem
           name="Shareh Akhter"
