@@ -23,7 +23,7 @@ function WidgetSm({ data, uname, utitle }) {
         <ListItem
           name="Fahad Siddiqui"
           title="Project Manager"
-          image={user}
+          image={users.image}
         />
         <ListItem
           name="Shareh Akhter"
