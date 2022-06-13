@@ -23,7 +23,6 @@ function WidgetSm({ data, uname, utitle }) {
         {users.map((user) => (
           <ListItem
             name={user.username}
-            title="Project Manager"
             image={
               user.image ||
               "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
@@ -35,14 +34,13 @@ function WidgetSm({ data, uname, utitle }) {
   );
 }
 
-export function ListItem({ name, title, image }) {
+export function ListItem({ name, image }) {
   return (
     <div>
       <li className="WidgetSmListItem">
         <img src={image} alt="user" className="widgetSmImg" />
         <div className="widgetSmUser">
           <span className="widgetUserName">{name}</span>
-          <span className="widgetUserJob">{title}</span>
         </div>
         <button className="widgetSmButton">
           <Visibility className="widgetSmIcon" />
