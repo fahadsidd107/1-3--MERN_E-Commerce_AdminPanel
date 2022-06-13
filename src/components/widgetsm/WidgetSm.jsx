@@ -22,7 +22,7 @@ function WidgetSm({ data, uname, utitle }) {
       <ul className="WidgetSmList">
         {users.map((user) => (
           <ListItem
-            name="Fahad Siddiqui"
+            name={user.username}
             title="Project Manager"
             image={
               user.image ||
