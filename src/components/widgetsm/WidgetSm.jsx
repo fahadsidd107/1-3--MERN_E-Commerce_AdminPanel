@@ -3,31 +3,33 @@ import "./WidgetSm.css";
 import { Visibility } from "@material-ui/icons";
 import { userRequest } from "../../requestMethods";
 function WidgetSm({ data, uname, utitle }) {
-  const [users, setUser] = useState([]);
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    const getUser = async () => {
+    const getUsers = async () => {
       try {
         const res = await userRequest.get("users/?new=true");
-        setUser(res.data);
+        setUsers(res.data);
       } catch (err) {
         console.log(err);
       }
     };
-    getUser();
+    getUsers();
   }, []);
   return (
     <div className="WidgetSm">
       <span className="widgetSmTitle">New Join Memebers</span>
       <ul className="WidgetSmList">
-      {users.map((user) => (
-        <ListItem
-          name="Fahad Siddiqui"
-          title="Project Manager"
-          image={users.image || "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"}
-        />
-      ))}
-        
+        {users.map((user) => (
+          <ListItem
+            name="Fahad Siddiqui"
+            title="Project Manager"
+            image={
+              user.image ||
+              "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"
+            }
+          />
+        ))}
       </ul>
     </div>
   );
