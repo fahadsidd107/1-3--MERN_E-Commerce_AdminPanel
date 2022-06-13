@@ -15,7 +15,7 @@ export default function WidgetSm() {
     };
     getUsers();
   }, []);
-  
+
   return (
     <div className="widgetSm">
       <span className="widgetSmTitle">New Join Members</span>
