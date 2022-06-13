@@ -24,7 +24,7 @@ export default function WidgetSm() {
           <li className="widgetSmListItem" key={user._id}>
             <img
               src={
-                user.img ||
+                user.image ||
                 "https://crowd-literature.eu/wp-content/uploads/2015/01/no-avatar.gif"
               }
               alt=""
