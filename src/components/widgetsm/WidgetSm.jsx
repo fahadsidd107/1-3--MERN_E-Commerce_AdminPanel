@@ -8,7 +8,7 @@ function WidgetSm({ data, uname, utitle }) {
   useEffect(() => {
     const getUsers = async () => {
       try {
-        const res = await userRequest.get("users/?new=true");
+        const res = await userRequest.get("/api/user");
         setUsers(res.data);
       } catch (err) {
         console.log(err);
