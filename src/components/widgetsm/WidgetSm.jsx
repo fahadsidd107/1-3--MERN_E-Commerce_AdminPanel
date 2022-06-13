@@ -9,7 +9,7 @@ export default function WidgetSm() {
   useEffect(() => {
     const getUsers = async () => {
       try {
-        const res = await userRequest.get("users/?new=true");
+        const res = await userRequest.get("user/?new=true");
         setUsers(res.data);
       } catch {}
     };
@@ -31,7 +31,7 @@ export default function WidgetSm() {
               className="widgetSmImg"
             />
             <div className="widgetSmUser">
-              <span className="widgetSmUsername">{user.username}</span>
+              <span className="widgetSmUsername">{user.email}</span>
             </div>
             <button className="widgetSmButton">
               <Visibility className="widgetSmIcon" />
