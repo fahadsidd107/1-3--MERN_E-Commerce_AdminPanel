@@ -32,8 +32,8 @@ function WidgetLg() {
         {orders.map((order) => (
           <TableRow
           name={order.userId}
-          date="10 December 2021"
-          amount="Rs.1500"
+          date={order.createdAt}
+          amount={order.amount}
           status="Approved"
           img="https://avatars.githubusercontent.com/u/61376412?s=400&u=bd4075255e4b63efdd5dc216a0375013fe7e0781&v=4"
         />
