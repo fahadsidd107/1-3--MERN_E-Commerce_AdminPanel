@@ -31,15 +31,13 @@ function WidgetLg() {
         </tr>
         {orders.map((order) => (
           <TableRow
-          name={order.userId}
-          date={order.createdAt}
-          amount={order.amount}
-          status={order.status}
-          img="https://avatars.githubusercontent.com/u/61376412?s=400&u=bd4075255e4b63efdd5dc216a0375013fe7e0781&v=4"
-        />
+            name={order.userId}
+            date={order.createdAt}
+            amount={order.amount}
+            status={order.status}
+            img="https://avatars.githubusercontent.com/u/61376412?s=400&u=bd4075255e4b63efdd5dc216a0375013fe7e0781&v=4"
+          />
         ))}
-       
-        
       </table>
     </div>
   );
