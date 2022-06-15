@@ -29,34 +29,16 @@ function WidgetLg() {
           <th className="widgetLgTh">Amount</th>
           <th className="widgetLgTh">Status</th>
         </tr>
-        <TableRow
-          name="Muhammad Fahad "
-          date="10 December 2021"
-          amount="Rs.1500"
-          status="Approved"
-          img="https://avatars.githubusercontent.com/u/61376412?s=400&u=bd4075255e4b63efdd5dc216a0375013fe7e0781&v=4"
-        />
-        <TableRow
-          name="Ahad Siddiqui"
-          date="10 December 2021"
-          amount="Rs.1500"
-          status="Declined"
-          img="https://avatars.githubusercontent.com/u/61376412?s=400&u=bd4075255e4b63efdd5dc216a0375013fe7e0781&v=4"
-        />
-        <TableRow
-          name="Noor Arslan"
-          date="10 December 2021"
-          amount="Rs.1500"
-          status="Pending"
-          img="https://avatars.githubusercontent.com/u/61376412?s=400&u=bd4075255e4b63efdd5dc216a0375013fe7e0781&v=4"
-        />
-        <TableRow
+        {orders.map((order) => (
+          <TableRow
           name="Daniyal Nasir"
           date="10 December 2021"
           amount="Rs.1500"
           status="Approved"
           img="https://avatars.githubusercontent.com/u/61376412?s=400&u=bd4075255e4b63efdd5dc216a0375013fe7e0781&v=4"
         />
+        ))}
+       
         
       </table>
     </div>
