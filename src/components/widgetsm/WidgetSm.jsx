@@ -11,7 +11,6 @@ export default function WidgetSm() {
       try {
         const res = await userRequest.get("user?new=true");
         setUsers(res.data);
-        console.log(res.data);
       } catch {}
     };
     getUsers();
