@@ -31,7 +31,7 @@ function WidgetLg() {
         </tr>
         {orders.map((order) => (
           <TableRow
-          name="Daniyal Nasir"
+          name={order.userId}
           date="10 December 2021"
           amount="Rs.1500"
           status="Approved"
