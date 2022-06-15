@@ -53,7 +53,7 @@ export function TableRow({ img, name, date, amount, status }) {
         <span className="widgetLgName">{name}</span>
       </td>
       <td className="widgetLgDate">{date}</td>
-      <td className="widgetLgAmount">{amount}</td>
+      <td className="widgetLgAmount">Rs.{amount}</td>
       <td className="widgetLgStatus">
         <Button type={status} />
       </td>
