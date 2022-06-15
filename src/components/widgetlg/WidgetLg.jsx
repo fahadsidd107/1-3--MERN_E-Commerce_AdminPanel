@@ -11,13 +11,13 @@ function WidgetLg() {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    const getUsers = async () => {
+    const getOrders = async () => {
       try {
-        const res = await userRequest.get("user?new=true");
-        setUsers(res.data);
+        const res = await userRequest.get("order/");
+        setOrders(res.data);
       } catch {}
     };
-    getUsers();
+    getOrders();
   }, []);
   return (
     <div className="WidgetLg">
