@@ -1,11 +1,24 @@
 import React from "react";
 import "./WidgetLg.css";
+import { useEffect, useState } from "react";
+import { userRequest } from "../../requestMethods";
 
 export function Button({ type }) {
   return <button className={"widgetButton " + type}>{type}</button>;
 }
 
 function WidgetLg() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    const getUsers = async () => {
+      try {
+        const res = await userRequest.get("user?new=true");
+        setUsers(res.data);
+      } catch {}
+    };
+    getUsers();
+  }, []);
   return (
     <div className="WidgetLg">
       <h3 className="widgetLgTitle">Latest Transactions</h3>
