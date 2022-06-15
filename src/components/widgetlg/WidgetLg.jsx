@@ -35,7 +35,7 @@ function WidgetLg() {
             date={order.createdAt}
             amount={order.amount}
             status={order.status}
-            img=""
+            
           />
         ))}
       </table>
