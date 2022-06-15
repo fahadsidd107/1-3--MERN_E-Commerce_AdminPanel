@@ -8,7 +8,7 @@ export function Button({ type }) {
 }
 
 function WidgetLg() {
-  const [users, setUsers] = useState([]);
+  const [orders, setOrders] = useState([]);
 
   useEffect(() => {
     const getUsers = async () => {
