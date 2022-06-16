@@ -33,7 +33,9 @@ function Chart({ title, data, userDataKey, salesDataKey, grid }) {
     ],[]
   )
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const getChartData = async () => {}
+  }, []);
 
   return (
     <div className="chart">
