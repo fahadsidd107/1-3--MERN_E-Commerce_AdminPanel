@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useMemo } from "react";
 import "./Chart.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 import { userRequest } from "../../requestMethods";
 import {
   LineChart,
@@ -15,6 +15,10 @@ import {
 
 function Chart({ title, data, userDataKey, salesDataKey, grid }) {
   const [chartData, setChartData] = useState([]);
+
+  const MONTHS = useMemo(
+    () => []
+  )
   return (
     <div className="chart">
       <h3 className="chartTitle">{title}</h3>
