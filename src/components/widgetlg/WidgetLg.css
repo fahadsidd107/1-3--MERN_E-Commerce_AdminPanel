@@ -44,15 +44,15 @@
   border-radius: 10px;
   padding: 7px 10px;
 }
-.widgetButton.Approved {
+.widgetButton.approved {
   background-color: #e5faf2;
   color: #3bb077;
 }
-.widgetButton.Declined {
+.widgetButton.declined {
   background-color: #fff0f1;
   color: #d95087;
 }
-.widgetButton.Pending {
+.widgetButton.pending {
   background-color: #f5f3ce;
-  color: #d1c625;
+  color: #cfc20a;
 }
