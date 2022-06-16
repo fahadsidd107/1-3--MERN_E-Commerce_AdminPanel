@@ -1,5 +1,7 @@
 import React from "react";
 import "./Chart.css";
+import { useEffect, useState } from "react";
+import { userRequest } from "../../requestMethods";
 import {
   LineChart,
   Line,
@@ -12,6 +14,7 @@ import {
 } from "recharts";
 
 function Chart({ title, data, userDataKey, salesDataKey, grid }) {
+  const [chartData, setChartData] = useState([]);
   return (
     <div className="chart">
       <h3 className="chartTitle">{title}</h3>
