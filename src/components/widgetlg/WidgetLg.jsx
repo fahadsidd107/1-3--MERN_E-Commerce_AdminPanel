@@ -2,6 +2,7 @@ import React from "react";
 import "./WidgetLg.css";
 import { useEffect, useState } from "react";
 import { userRequest } from "../../requestMethods";
+import {format} from 'timeago.js';
 
 export function Button({ type }) {
   return <button className={"widgetButton " + type}>{type}</button>;
