@@ -30,8 +30,11 @@ function Chart({ title, data, userDataKey, salesDataKey, grid }) {
       "Oct",
       "Nov",
       "Dec",
-    ],
+    ],[]
   )
+
+  useEffect(() => {}, []);
+
   return (
     <div className="chart">
       <h3 className="chartTitle">{title}</h3>
