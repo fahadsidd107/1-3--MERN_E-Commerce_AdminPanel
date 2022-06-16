@@ -33,7 +33,7 @@ function WidgetLg() {
         {orders.map((order) => (
           <TableRow
             name={order.userId}
-            date={order.createdAt}
+            date={format(order.createdAt)}
             amount={order.amount}
             status={order.status}
             
