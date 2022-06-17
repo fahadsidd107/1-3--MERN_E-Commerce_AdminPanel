@@ -47,7 +47,7 @@ function Chart({ title, data, userDataKey, salesDataKey, grid }) {
 
       }
     };
-  }, []);
+  }, [MONTHS]);
 
   return (
     <div className="chart">
