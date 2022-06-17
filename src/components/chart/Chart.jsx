@@ -38,6 +38,7 @@ function Chart({ title, data, userDataKey, salesDataKey, grid }) {
     const getChartData = async () => {
       try{
  const res = await userRequest(`/user/stats`);
+ res.data.map((item) => {})
       }catch(err){
 
       }
