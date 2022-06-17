@@ -37,7 +37,7 @@ function Chart({ title, data, userDataKey, salesDataKey, grid }) {
   useEffect(() => {
     const getChartData = async () => {
       try{
- const res = await userRequest(`/api/users/chart`);
+ const res = await userRequest(`/user/stats`);
       }catch(err){
 
       }
