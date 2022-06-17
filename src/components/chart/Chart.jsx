@@ -40,7 +40,8 @@ function Chart({ title, data, userDataKey, salesDataKey, grid }) {
  const res = await userRequest(`/user/stats`);
  res.data.map((item) => {
   setChartData(prev=>[...prev, 
-    {name:MONTHS}])
+    {name:MONTHS[item._id-1]}
+  ])
  })
       }catch(err){
 
