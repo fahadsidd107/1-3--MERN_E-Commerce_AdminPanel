@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import "./Chart.css";
-import { useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import { userRequest } from "../../requestMethods";
 import {
   LineChart,
@@ -30,11 +30,18 @@ function Chart({ title, data, userDataKey, salesDataKey, grid }) {
       "Oct",
       "Nov",
       "Dec",
-    ],[]
-  )
+    ],
+    []
+  );
 
   useEffect(() => {
-    const getChartData = async () => {}
+    const getChartData = async () => {
+      try{
+
+      }catch(err){
+        
+      }
+    };
   }, []);
 
   return (
