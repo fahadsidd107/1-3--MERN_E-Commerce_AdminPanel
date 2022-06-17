@@ -50,6 +50,8 @@ function Chart({ title, data, userDataKey, salesDataKey, grid }) {
     getChartData();
   }, [MONTHS]);
 
+  console.log(chartData);
+
   return (
     <div className="chart">
       <h3 className="chartTitle">{title}</h3>
