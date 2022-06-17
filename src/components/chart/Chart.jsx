@@ -47,6 +47,7 @@ function Chart({ title, data, userDataKey, salesDataKey, grid }) {
 
       }
     };
+    getChartData();
   }, [MONTHS]);
 
   return (
