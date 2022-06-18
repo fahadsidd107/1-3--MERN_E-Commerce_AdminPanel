@@ -58,7 +58,7 @@ function Chart({ title, data, userDataKey, salesDataKey, grid }) {
         <LineChart data={chartData}>
           <XAxis dataKey="name" stroke="#5551bd" />
           <YAxis />
-          <Line type="monotone" dataKey={salesDataKey} stroke="#5551bd" />
+          <Line type="monotone"  stroke="#5551bd" />
           <Line
             type="monotone"
             dataKey={userDataKey}
