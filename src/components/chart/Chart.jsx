@@ -49,7 +49,7 @@ function Chart({ title, data, userDataKey, salesDataKey, grid }) {
     getChartData();
   }, [MONTHS]);
 
-  console.log(chartData);
+  // console.log(chartData);
 
   return (
     <div className="chart">
