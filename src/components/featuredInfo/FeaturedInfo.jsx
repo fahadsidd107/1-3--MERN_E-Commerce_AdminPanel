@@ -1,9 +1,10 @@
 import React from "react";
 import "./FeaturedInfo.css";
 import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
+import { useEffect, useState } from "react";
 
 function FeaturedInfo() {
-  
+
   return (
     <div className="featuredinfo">
       <div className="featuredItem">
