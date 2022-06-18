@@ -2,7 +2,7 @@ import React from "react";
 import "./WidgetLg.css";
 import { useEffect, useState } from "react";
 import { userRequest } from "../../requestMethods";
-import {format} from 'timeago.js';
+import { format } from "timeago.js";
 
 export function Button({ type }) {
   return <button className={"widgetButton " + type}>{type}</button>;
@@ -37,7 +37,6 @@ function WidgetLg() {
             amount={order.amount}
             status={order.status}
             key={order._id}
-            
           />
         ))}
       </table>
@@ -45,10 +44,10 @@ function WidgetLg() {
   );
 }
 
-export function TableRow({ img, name, date, amount, status,key }) {
+export function TableRow({ img, name, date, amount, status, key }) {
   return (
     <tr className="widgetLgTr" key={key}>
-      <td className="widgetLgUser" >
+      <td className="widgetLgUser">
         <img src={img} className="widgetLgImage" />
         <span className="widgetLgName">{name}</span>
       </td>
