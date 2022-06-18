@@ -4,13 +4,14 @@ import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
 import { useEffect, useState } from "react";
 
 function FeaturedInfo() {
+  const[income, setIncome] = useState(0);
 
   return (
     <div className="featuredinfo">
       <div className="featuredItem">
         <span className="featureTitle">Revenue</span>
         <div className="featuredMoneyContainer">
-          <span className="featuredMoney">Rs.1000</span>
+          <span className="featuredMoney">Rs.{income}</span>
           <span className="featuredMoneyRate">
             -0.2 <ArrowDownward className="featuredIcon negative" />
           </span>
