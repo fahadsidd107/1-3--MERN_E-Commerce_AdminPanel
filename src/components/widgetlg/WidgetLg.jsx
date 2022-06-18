@@ -36,6 +36,7 @@ function WidgetLg() {
             date={format(order.createdAt)}
             amount={order.amount}
             status={order.status}
+            key={order._id}
             
           />
         ))}
@@ -44,10 +45,10 @@ function WidgetLg() {
   );
 }
 
-export function TableRow({ img, name, date, amount, status }) {
+export function TableRow({ img, name, date, amount, status,key }) {
   return (
-    <tr className="widgetLgTr">
-      <td className="widgetLgUser">
+    <tr className="widgetLgTr" key={key}>
+      <td className="widgetLgUser" >
         <img src={img} className="widgetLgImage" />
         <span className="widgetLgName">{name}</span>
       </td>
