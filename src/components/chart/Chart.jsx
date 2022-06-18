@@ -36,16 +36,15 @@ function Chart({ title, data, userDataKey, salesDataKey, grid }) {
 
   useEffect(() => {
     const getChartData = async () => {
-      try{
- const res = await userRequest(`/user/stats`);
- res.data.map((item) => {
-  setChartData(prev=>[...prev, 
-    {name:MONTHS[item._id-1], "Active User": item.total }
-  ])
- })
-      }catch(err){
-
-      }
+      try {
+        const res = await userRequest(`/user/stats`);
+        res.data.map((item) => {
+          setChartData((prev) => [
+            ...prev,
+            { name: MONTHS[item._id - 1], "Active User": item.total },
+          ]);
+        });
+      } catch (err) {}
     };
     getChartData();
   }, [MONTHS]);
@@ -56,7 +55,7 @@ function Chart({ title, data, userDataKey, salesDataKey, grid }) {
     <div className="chart">
       <h3 className="chartTitle">{title}</h3>
       <ResponsiveContainer width="100%" aspect={4 / 1}>
-        <LineChart data={data}>
+        <LineChart data={chartData}>
           <XAxis dataKey="name" stroke="#5551bd" />
           <YAxis />
           <Line type="monotone" dataKey={salesDataKey} stroke="#5551bd" />
