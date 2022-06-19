@@ -12,6 +12,7 @@ function FeaturedInfo() {
       try{
         const res = await userRequest(`/order/income`);
         setIncome(res.data);
+        setPercentage((res.data[1].total*100)/(2));
       }catch(err){
         console.log(err)
       }
