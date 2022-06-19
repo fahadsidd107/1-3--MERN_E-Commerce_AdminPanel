@@ -2,6 +2,7 @@ import React from "react";
 import "./FeaturedInfo.css";
 import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
 import { useEffect, useState } from "react";
+import { userRequest } from "../../requestMethods";
 
 function FeaturedInfo() {
   const [income, setIncome] = useState(0);
