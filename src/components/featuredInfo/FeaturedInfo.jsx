@@ -15,15 +15,16 @@ function FeaturedInfo() {
         console.log(err)
       }
     }
-    
+   getIncome(); 
   }, []);
 
+  console.log(income);
   return (
     <div className="featuredinfo">
       <div className="featuredItem">
         <span className="featureTitle">Revenue</span>
         <div className="featuredMoneyContainer">
-          <span className="featuredMoney">Rs.{income}</span>
+          <span className="featuredMoney">Rs.</span>
           <span className="featuredMoneyRate">
             -0.2 <ArrowDownward className="featuredIcon negative" />
           </span>
