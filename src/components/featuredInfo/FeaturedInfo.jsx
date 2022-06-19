@@ -5,7 +5,9 @@ import { useEffect, useState } from "react";
 
 function FeaturedInfo() {
   const [income, setIncome] = useState(0);
-  useEffect(() => {}, []);
+  useEffect(() => {
+    try{}catch{}
+  }, []);
 
   return (
     <div className="featuredinfo">
