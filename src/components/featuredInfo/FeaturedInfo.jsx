@@ -6,6 +6,7 @@ import { userRequest } from "../../requestMethods";
 
 function FeaturedInfo() {
   const [income, setIncome] = useState(0);
+  const [percentage, setPercentage] = useState(0);
   useEffect(() => {
     const getIncome = async () => {
       try{
