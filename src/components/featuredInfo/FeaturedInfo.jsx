@@ -7,13 +7,13 @@ function FeaturedInfo() {
   const [income, setIncome] = useState(0);
   useEffect(() => {
     const getIncome = async () => {
-      
+      try{
+        const res = await userRequest(``);
+      }catch(err){
+        console.log(err)
+      }
     }
-    try{
-      const res = await userRequest(``);
-    }catch(err){
-      console.log(err)
-    }
+    
   }, []);
 
   return (
