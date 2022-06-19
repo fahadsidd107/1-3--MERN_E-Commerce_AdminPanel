@@ -6,7 +6,11 @@ import { useEffect, useState } from "react";
 function FeaturedInfo() {
   const [income, setIncome] = useState(0);
   useEffect(() => {
-    try{}catch{}
+    try{
+
+    }catch(err){
+      console.log(err)
+    }
   }, []);
 
   return (
