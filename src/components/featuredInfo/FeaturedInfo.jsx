@@ -7,7 +7,7 @@ function FeaturedInfo() {
   const [income, setIncome] = useState(0);
   useEffect(() => {
     try{
-
+      const res = await userRequest(``);
     }catch(err){
       console.log(err)
     }
