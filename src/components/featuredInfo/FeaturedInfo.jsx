@@ -9,7 +9,7 @@ function FeaturedInfo() {
   useEffect(() => {
     const getIncome = async () => {
       try{
-        const res = await userRequest(``);
+        const res = await userRequest(`/order/income`);
       }catch(err){
         console.log(err)
       }
