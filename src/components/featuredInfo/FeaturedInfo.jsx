@@ -10,6 +10,7 @@ function FeaturedInfo() {
     const getIncome = async () => {
       try{
         const res = await userRequest(`/order/income`);
+        setIncome(res.data);
       }catch(err){
         console.log(err)
       }
