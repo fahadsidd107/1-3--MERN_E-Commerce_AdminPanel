@@ -13,7 +13,6 @@ function FeaturedInfo() {
         const res = await userRequest(`/order/income`);
         // setIncome(res.data);
         // setPercentage((res.data[1].total * 100) / res.data[0].total - 100);
-
       } catch (err) {
         console.log(err);
       }
@@ -26,12 +25,14 @@ function FeaturedInfo() {
       <div className="featuredItem">
         <span className="featureTitle">Revenue</span>
         <div className="featuredMoneyContainer">
-          <span className="featuredMoney">Rs.100
-          {/* {income[0].total} */}
+          <span className="featuredMoney">
+            Rs.100
+            {/* {income[0].total} */}
           </span>
-          <span className="featuredMoneyRate">1.2
-           {/* {percentage}   */}
-           <ArrowDownward className="featuredIcon negative" />
+          <span className="featuredMoneyRate">
+            1.2
+            {/* {percentage}   */}
+            <ArrowDownward className="featuredIcon negative" />
           </span>
         </div>
         <span className="featuredSub">Compared to the last month</span>
