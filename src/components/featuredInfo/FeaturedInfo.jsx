@@ -28,7 +28,7 @@ function FeaturedInfo() {
         <div className="featuredMoneyContainer">
           <span className="featuredMoney">Rs.{income}</span>
           <span className="featuredMoneyRate">
-            -0.2 <ArrowDownward className="featuredIcon negative" />
+            -{percentage} <ArrowDownward className="featuredIcon negative" />
           </span>
         </div>
         <span className="featuredSub">Compared to the last month</span>
