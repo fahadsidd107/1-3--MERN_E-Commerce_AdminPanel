@@ -9,15 +9,15 @@ function FeaturedInfo() {
   const [percentage, setPercentage] = useState(0);
   useEffect(() => {
     const getIncome = async () => {
-      try{
+      try {
         const res = await userRequest(`/order/income`);
         setIncome(res.data);
-        setPercentage((res.data[1].total*100)/(res.data[0].total));
-      }catch(err){
-        console.log(err)
+        setPercentage((res.data[1].total * 100) / res.data[0].total);
+      } catch (err) {
+        console.log(err);
       }
-    }
-   getIncome(); 
+    };
+    getIncome();
   }, []);
 
   console.log(income);
