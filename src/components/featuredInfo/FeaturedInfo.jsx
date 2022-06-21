@@ -6,12 +6,12 @@ import { userRequest } from "../../requestMethods";
 
 function FeaturedInfo() {
   const [income, setIncome] = useState(0);
-  const [percentage, setPercentage] = useState(0);
+  const [percentage, setPercentage] = useState(1);
   useEffect(() => {
     const getIncome = async () => {
       try {
         const res = await userRequest(`/order/income`);
-        setIncome(res.data);
+        setIncome(res.data[1].total);
         setPercentage((res.data[1].total * 100) / res.data[0].total - 100);
       } catch (err) {
         console.log(err);
@@ -20,13 +20,13 @@ function FeaturedInfo() {
     getIncome();
   }, []);
 
-  console.log(percentage);
+ 
   return (
     <div className="featuredinfo">
       <div className="featuredItem">
         <span className="featureTitle">Revenue</span>
         <div className="featuredMoneyContainer">
-          <span className="featuredMoney">Rs.{income}</span>
+          <span className="featuredMoney">Rs.{income[0].total}</span>
           <span className="featuredMoneyRate">
             -{percentage} <ArrowDownward className="featuredIcon negative" />
           </span>
