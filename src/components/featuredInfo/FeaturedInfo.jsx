@@ -20,7 +20,7 @@ function FeaturedInfo() {
     getIncome();
   }, []);
 
-  console.log(income);
+  console.log(percentage);
   return (
     <div className="featuredinfo">
       <div className="featuredItem">
