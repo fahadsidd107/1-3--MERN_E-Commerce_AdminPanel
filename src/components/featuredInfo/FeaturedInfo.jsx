@@ -31,7 +31,8 @@ function FeaturedInfo() {
           </span>
           <span className="featuredMoneyRate">
             %
-            {Math.floor}
+            {Math.floor(percentage)}{" "}
+            {percentage < 0}
             <ArrowDownward className="featuredIcon negative" />
           </span>
         </div>
