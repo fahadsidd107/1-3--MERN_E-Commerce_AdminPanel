@@ -30,8 +30,8 @@ function FeaturedInfo() {
             {/* {income[0].total} */}
           </span>
           <span className="featuredMoneyRate">
-            1.2
-            {/* {percentage}   */}
+            %
+            {percentage}
             <ArrowDownward className="featuredIcon negative" />
           </span>
         </div>
