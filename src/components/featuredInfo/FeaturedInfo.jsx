@@ -14,7 +14,7 @@ function FeaturedInfo() {
         // setIncome(res.data);
         // setPercentage((res.data[1].total * 100) / res.data[0].total - 100);
       } catch (err) {
-        console.log(err);
+        
       }
     };
     getIncome();
