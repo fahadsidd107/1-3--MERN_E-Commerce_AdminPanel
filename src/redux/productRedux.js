@@ -34,7 +34,6 @@ export const {
     getProductStart,
     getProductSuccess,
     getProductFailure,
-
   } = productSlice.actions;
   
   export default productSlice.reducer;
