@@ -12,8 +12,8 @@ export const login = async (dispatch,user)=>{
 }
 
 
-export const login = async (dispatch,user)=>{
-    dispatch(loginStart());
+export const getProduct = async (dispatch)=>{
+    dispatch(getProductStart());
     try{
         const res = await userRequest.post("/auth/login",user);
         dispatch(loginSuccess(res.data));
