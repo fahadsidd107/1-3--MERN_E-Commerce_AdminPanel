@@ -5,8 +5,14 @@ import { productRows } from "../../Data";
 import { Link } from "react-router-dom";
 import {useDispatch} from 'react-redux'
 import "./ProductList.css";
+import { useEffect } from "react";
 function ProductList() {
   const [data, setData] = useState(productRows);
+
+useEffect(()=>{},[])
+
+
+
 
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
