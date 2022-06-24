@@ -1,4 +1,5 @@
 import { loginStart,loginFailure,loginSuccess } from "./userRedux";
+import {getProductStart} from './productRedux'
 import { userRequest } from "../requestMethods";
 
 export const login = async (dispatch,user)=>{
