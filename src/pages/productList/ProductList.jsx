@@ -3,16 +3,13 @@ import { DataGrid } from "@mui/x-data-grid";
 import { Edit, DeleteOutline } from "@material-ui/icons";
 import { productRows } from "../../Data";
 import { Link } from "react-router-dom";
-import {useDispatch} from 'react-redux'
+import { useDispatch } from "react-redux";
 import "./ProductList.css";
 import { useEffect } from "react";
 function ProductList() {
   const [data, setData] = useState(productRows);
 
-useEffect(()=>{},[])
-
-
-
+  useEffect(() => {}, []);
 
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
