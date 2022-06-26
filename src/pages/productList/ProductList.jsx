@@ -8,8 +8,6 @@ import "./ProductList.css";
 import { useEffect } from "react";
 import { deleteProduct, getProducts } from "../../redux/apiCalls";
 
-
-
 function ProductList() {
   const [data, setData] = useState(productRows);
 
