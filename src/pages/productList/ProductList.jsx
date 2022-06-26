@@ -16,8 +16,8 @@ function ProductList() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    getProducts();
-  }, []);
+    getProducts(dispatch);
+  }, [dispatch]);
 
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
