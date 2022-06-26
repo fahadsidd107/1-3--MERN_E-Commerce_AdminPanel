@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import "./ProductList.css";
 import { useEffect } from "react";
+import { getProducts } from "../../";
+
+
+
 function ProductList() {
   const [data, setData] = useState(productRows);
 
