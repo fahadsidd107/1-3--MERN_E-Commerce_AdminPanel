@@ -16,7 +16,7 @@ export const login = async (dispatch,user)=>{
 export const getProduct = async (dispatch)=>{
     dispatch(getProductStart());
     try{
-        const res = await userRequest.post("/product");
+        const res = await userRequest.get("/product");
         dispatch(getProductSuccess(res.data));
     }catch(err){
         dispatch(getProductFailure());
