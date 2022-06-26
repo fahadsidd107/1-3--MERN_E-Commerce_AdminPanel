@@ -9,7 +9,9 @@ import { useEffect } from "react";
 function ProductList() {
   const [data, setData] = useState(productRows);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    getProducts();
+  }, []);
 
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
