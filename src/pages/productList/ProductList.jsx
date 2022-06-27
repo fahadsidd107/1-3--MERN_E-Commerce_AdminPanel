@@ -12,6 +12,7 @@ function ProductList() {
   const [data, setData] = useState(productRows);
 
   const dispatch = useDispatch();
+  const products = useSelector((state) => state.products);
 
   useEffect(() => {
     getProducts(dispatch);
