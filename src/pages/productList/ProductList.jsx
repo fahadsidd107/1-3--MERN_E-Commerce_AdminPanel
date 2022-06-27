@@ -37,7 +37,7 @@ function ProductList() {
         );
       },
     },
-    { field: "stock", headerName: "Stock", type: "text", width: 160 },
+    { field: "inStock", headerName: "Stock", type: "text", width: 160 },
     {
       field: "status",
       headerName: "Status",
