@@ -18,9 +18,9 @@ function ProductList() {
     getProducts(dispatch);
   }, [dispatch]);
 
-  const handleDelete = (id) => {
-    setData(data.filter((item) => item.id !== id));
-  };
+  // const handleDelete = (id) => {
+  //   setData(data.filter((item) => item.id !== id));
+  // };
 
   const columns = [
     { field: "_id", headerName: "ID", width: 100 },
@@ -65,10 +65,10 @@ function ProductList() {
             </Link>
             <DeleteOutline
               className="productListDelete"
-              onClick={() => {
-                handleDelete(params.row.id);
-                alert(`Item with ID: ${params.row.id} has been deleted.`);
-              }}
+              // onClick={() => {
+              //   handleDelete(params.row.id);
+              //   alert(`Item with ID: ${params.row.id} has been deleted.`);
+              // }}
             />
           </div>
         );
