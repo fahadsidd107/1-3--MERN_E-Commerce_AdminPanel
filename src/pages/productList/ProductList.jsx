@@ -23,7 +23,7 @@ function ProductList() {
   };
 
   const columns = [
-    { field: "id", headerName: "ID", width: 100 },
+    { field: "_id", headerName: "ID", width: 100 },
     {
       field: "productname",
       headerName: "Productname",
