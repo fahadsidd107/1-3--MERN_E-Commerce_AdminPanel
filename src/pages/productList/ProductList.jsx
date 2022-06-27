@@ -79,7 +79,7 @@ function ProductList() {
   return (
     <div className="productList">
       <DataGrid
-        rows={data}
+        rows={products}
         disableSelectionOnClick
         columns={columns}
         pageSize={8}
