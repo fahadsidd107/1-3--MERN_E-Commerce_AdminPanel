@@ -33,6 +33,10 @@ export const productSlice = createSlice({
         1
       );
     },
+    updateProductFailure: (state) => {
+      state.isFetching = false;
+      state.error = true;
+    },
   },
 });
 
