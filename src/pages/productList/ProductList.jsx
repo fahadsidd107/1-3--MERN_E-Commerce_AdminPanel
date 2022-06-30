@@ -64,10 +64,10 @@ function ProductList() {
             </Link>
             <DeleteOutline
               className="productListDelete"
-              // onClick={() => {
-              //   handleDelete(params.row.id);
-              //   alert(`Item with ID: ${params.row.id} has been deleted.`);
-              // }}
+              onClick={() => {
+                handleDelete(params.row.id);
+                alert(`Item with ID: ${params.row.id} has been deleted.`);
+              }}
             />
           </div>
         );
