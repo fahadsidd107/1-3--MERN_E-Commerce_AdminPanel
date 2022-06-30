@@ -41,7 +41,9 @@ export const productSlice = createSlice({
 });
 
 export const {
-  getProductStart,getProductSuccess,getProductFailure,
+  getProductStart,
+  getProductSuccess,
+  getProductFailure,
   deleteProductStart,
   deleteProductSuccess,
   deleteProductFailure,
