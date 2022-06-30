@@ -17,9 +17,9 @@ function ProductList() {
     getProducts(dispatch);
   }, [dispatch]);
 
-  // const handleDelete = (id) => {
-  //   setData(data.filter((item) => item.id !== id));
-  // };
+  const handleDelete = (id) => {
+    setData(data.filter((item) => item.id !== id));
+  };
 
   const columns = [
     { field: "_id", headerName: "ID", width: 220 },
