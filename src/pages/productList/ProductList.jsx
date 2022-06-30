@@ -9,7 +9,6 @@ import { useEffect } from "react";
 import { deleteProduct, getProducts } from "../../redux/apiCalls";
 
 function ProductList() {
-  // const [data, setData] = useState(productRows);
 
   const dispatch = useDispatch();
   const products = useSelector((state) => state.product.products);
